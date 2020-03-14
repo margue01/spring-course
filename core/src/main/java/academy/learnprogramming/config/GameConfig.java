@@ -24,7 +24,7 @@ public class GameConfig {
     @Value("${game.guessCount:5}")
     private int guessCount;
 
-    // Method 1: Qualifier with name: require the string to be copied where the String is Autowired
+    // Method 1: Qualifier with name: require the string to be copied in several places.
     @Bean
     @Qualifier("GuessCount")
     public int guessCountMethod1() { // can be rename since we are now using Qualifiers
