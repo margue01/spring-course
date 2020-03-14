@@ -18,19 +18,6 @@ public class Main {
 
         // create context with a Java config
         ConfigurableApplicationContext context = new AnnotationConfigApplicationContext(GameConfig.class);
-//       APP STARTS WITH THE EVENT Callback
-
-//        NumberGenerator numberGenerator = context.getBean(NumberGenerator.class);
-//
-//        int number = numberGenerator.next();
-//
-//        log.info("number = {}", number); // if debug, the string won't be concatenated
-//
-//        Game game = context.getBean(Game.class);
-//
-//        MessageGenerator messageGenerator = context.getBean(MessageGenerator.class);
-//        log.info("getMainMessage = {}", messageGenerator.getMainMessage());
-//        log.info("getResultMessage = {}", messageGenerator.getResultMessage());
         context.close();
     }
 }
