@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
+<head id="headId">
     <meta charset="UTF-8">
-    <title>Guess the number game</title>
+    <title>Title Content</title>
 </head>
 <body>
     <div align="center">
         <h1>Welcome to Guess the number game</h1>
         <h3>
-            <a th:href="@{__${T(academy.learnprogramming.util.GameMappings).PLAY}__}"
-               th:text="Play">
+            <a id="play-link"
+               href="Play.html">
                 Click to Play
             </a>
 
         </h3>
 
+        <footer id="footerId">
+            <p>Footer content</p>
+        </footer>
     </div>
 </body>
 </html>
